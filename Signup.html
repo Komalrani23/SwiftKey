@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="./static/css/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Swift<span> Key.</span></a></div>
+            <ul class="menu">
+                <li><a href="./">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/log"><spam>Login</spam></a></li>
+                <li><a href="/sign"><spam>Signup</spam></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Image">
+        <img src="./static/Image/bg.jpg" alt="Not Found">
+    </div>
+
+    <div class="main-section">
+        <div class="form">
+            <div class="upper-container">
+                <h1>Register Here(Signup)</h1>
+                <p>Please fill all texts in the Fields</p>
+            </div>
+
+            <div class="lower-container">
+                <form action="http://localhost:3000/signup" method="post">
+                <p>Your Name : <br>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </p>
+
+                <p>Your Email : <br>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </p>
+
+                <p>Your Phone Number : <br>
+                    <input type="number" id="phone" name="phone" placeholder="Your Phone Number" required>
+                </p>
+
+                <p>Your Secure Password : <br>
+                    <input type="password" id="pass" name="pass" placeholder="Enter Password" required>    
+                </p>
+
+                <p>Confirm Password : <br>
+                    <input type="password" id="cpass" name="cpass" placeholder="Confirm Password" required>    
+                </p>
+
+                <p>Collage Name : <br>
+                    <input type="text" id="clgname" name="clgname" placeholder="Motilal Nehru National Institute of Technology"
+                        required>
+                </p>
+
+                <p>Subject <br>
+                    <select name="subname" id="subname" required>
+                        <option value="None">--Select a Subject--</option>
+                        <option value="MCA">MCA</option>
+                        <option value="Btech CSE">Btech CSE</option>
+                        <option value="Btech IT">Btech IT</option>
+                        <option value="Btech ECE">Btech ECE</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </p>
+
+                <input type="submit" value="Submit">
+
+                <p>Already having Account <a href="Login.html">Log In</a></p>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <br>
+        <p class="text-center">© 2021-2020 <spam>Codezombers</spam>, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+</body>
+</html>

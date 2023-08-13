@@ -1,0 +1,140 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #111;
+}
+
+.max-width{
+    max-width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+.section{
+    padding: 20px 0;
+}
+
+/* navbar styling */
+.navbar{
+    /* position: relative; */
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    background-color: rgb(39, 39, 39);
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+.navbar spam{
+    color: crimson;
+    font-weight: bold;
+}
+
+/* Mian contact */
+.container{
+    /* border: 2px solid rebeccapurple; */
+    width: 80%;
+    margin: 0px auto;
+}
+
+.box{
+    border: 2px solid rgb(27, 181, 241);
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(27, 181, 241);
+    margin-top: 7px;
+    padding: 10px;
+    height: 170px;
+}
+.image{
+    /* border: 1px solid grey; */
+    border-radius: 5px;
+    /* background-color: white; */
+    width: 25%;
+    height: 150px;
+    text-align: center;
+}
+
+.image-1{
+    float: left;
+    margin-right: 10px;
+}
+.image-2{
+    float: right;
+    margin-left: 10px;
+}
+.image-3{
+    float: left;
+    margin-right: 10px;
+}
+
+.cont-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont-detail p{
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cont-detail p spam{
+    color: rgb(141, 51, 51);
+}
+
+.image img{
+    width: 230px;
+    height: 150px;
+    border-radius: 30%;
+}
+
+/* footer */
+.footer{
+    /* margin-top: 20px; */
+    text-align: center;
+    /* background-color: #f2f2f2; */
+    color: white;
+}
+.footer spam{
+    color: crimson;
+    font-weight: bold;
+}

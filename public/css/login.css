@@ -1,0 +1,159 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.max-width{
+    max-width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+.section{
+    padding: 20px 0;
+}
+
+/* navbar styling */
+.navbar{
+    /* position: relative; */
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    background-color: rgb(39, 39, 39);
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+.navbar spam{
+    color: crimson;
+    font-weight: bold;
+}
+
+
+/* Image -Section */
+.image-section{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+/* Main - Section */
+
+.main-section{
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.loginform{
+    /* border: 2px solid green; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: #f2f2f2;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.upper-container{
+    text-align: center;
+    background-color: #72f01e86;
+    border: 1px solid #72f01e86;
+    border-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.lower-container{
+    padding: 5px 20px 10px 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea , select{
+    width: 100%;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    margin-top: 5px;
+    padding: 8px;
+}
+input[type="submit"]{
+    background-color: #4caf84;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #4caf84;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 25px;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #4cbd8c;
+    border: 2px solid #4cbd8c;
+    border-radius: 5px;
+}
+
+.lower-container p{
+    margin-top: 10px;
+}
+
+.lower-container p a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(15, 126, 218);
+}
+
+/* footer */
+.footer{
+    /* margin-top: 20px; */
+    text-align: center;
+    /* background-color: #f2f2f2; */
+    color: black;
+    padding: 20px;
+    font-size: 1.2em;
+}
+.footer spam{
+    color: crimson;
+    font-weight: bold;
+}

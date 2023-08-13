@@ -1,0 +1,30 @@
+ if(login==="yes"){
+
+            res.sendFile(__dirname+"/Signup.html");
+
+
+        }
+        if(login=="no"){
+            res.sendFile(__dirname+"/Signup.html");
+        }
+
+
+
+        collection.findOne({"pass":req.body.pass}, function (err, result) {
+                    if (err) {
+                        //throw err;
+                        //reject(err);
+                        console.log("Error");
+                    }
+                    if (result !== null) {
+                        client.close();
+                        console.log("Yes");
+                        res.sendFile(__dirname+"/Home.html");
+                        //resolve(true);
+                    } else {
+                        client.close();
+                        console.log("No");
+                        res.json({msg:`no`});
+                        //resolve(false);
+                    }
+                });

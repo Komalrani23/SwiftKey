@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./static/css/login.css">
+    <link  href="/icon_login1.png">
+    <title>Document</title>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Swift<span> Key.</span></a></div>
+            <ul class="menu">
+                <li><a href="./">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/log"><spam>Login</spam></a></li>
+                <li><a href="/sign"><spam>Signup</spam></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <img src="./static/image/icon_login1.png" alt="">
+    </div>
+
+    <div class="main-section">
+        <div class="loginform">
+            <div class="form">
+                <div class="upper-container">
+                    <h1>Log In</h1>
+                    <p>Please fill all texts in the Fields</p>
+                </div>
+    
+                <div class="lower-container">
+                    <form action="http://localhost:3000/logg" method="post">
+                    <p>Your Email* : <br>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </p>
+    
+                    <p>Your Secure Password* : <br>
+                        <input type="password" id="pass" name="pass" placeholder="Enter Password" required>    
+                    </p>
+    
+                    <input type="submit" value="Login"/>
+
+                    <p>Create New Account <a href="Signup.html">SignUp</a></p>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <br>
+        <p class="text-center">© 2020-2021 <spam>Codezombers</spam>, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p id="result" style="color: red"></p>
+    </footer>
+<script>
+	function sendData() {
+		var email = document.getElementById("email").value;
+		var pass = document.getElementById("pass").value;
+		var result = document.getElementById("result");
+		fetch("/logg", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify({ email: email, pass: pass }),
+		})
+		.then(function (response) {
+			return response.json();
+		})
+		.then(function (data) {
+            if(data.msg=="no"){
+                result.innerHTML ="Wrong Password"
+            }
+			//result.innerHTML = data.msg;
+		})
+		.catch(function (error) {
+			console.log(error);
+		});
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(37, 35, 35);
+    color: #fff;
+    /* overflow: hidden; */
+}
+
+.max-width{
+    max-width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+.section{
+    padding: 20px 0;
+}
+
+/* navbar styling */
+.navbar{
+    /* position: relative; */
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    background-color: rgb(39, 39, 39);
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+.navbar spam{
+    color: crimson;
+    font-weight: bold;
+}
+
+/* image section */
+.image{
+    width: 100%;
+    height: 400px;
+    background-image: url('../Image/1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid red; */
+}
+
+/* practice section */
+.practice-section{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 234);
+}
+
+.practice{
+    border: 5px solid black;
+    border-radius: 10%;
+    text-align: center;
+    width: 25%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.practice-text a spam{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* features */
+.features-section{
+    margin-top: 40px;
+    /* border: 2px solid red; */
+    /* background-color: rgb(238, 238, 234); */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: black; */
+}
+
+.features-text{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: coral;
+}
+
+.features-content{
+    margin-top: 10px;
+    width: 80%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.row  spam{
+    font-size: 1.3em;
+    color: rgb(192, 192, 127);
+    font-weight: bold;
+}
+
+/* our mission */
+.mission-section{
+    margin: 40px 0px;
+    /* border: 2px solid red; */
+    background-color: rgb(238, 238, 234);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.mission-text{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: coral;
+}
+
+.mission-content{
+    margin-top: 10px;
+    width: 60%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* motive */
+.motive-content{
+    margin: 20px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.motive-heading{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: coral;
+}
+
+.motive-text{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* footer */
+.footer{
+    /* margin-top: 20px; */
+    text-align: center;
+    background-color: #f2f2f2;
+    color: black;
+    padding: 20px;
+    font-size: 1.2em;
+}
+.footer spam{
+    color: crimson;
+    font-weight: bold;
+}
